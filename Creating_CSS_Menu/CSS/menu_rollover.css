@@ -1,0 +1,76 @@
+body {
+    background: #184352;
+}
+
+.wrap {
+    top: 0;
+    left: 0;
+    height: auto; /* it will figur out itself*/
+    width: 100%;
+}
+
+.menu_container {
+    top: 0;
+    left: 0;
+    /*To the top edge of the screen*/
+    position: absolute;/*means i do want to be absolutley on this position on the corner  */
+    width: 100%;
+    background-color: #184352;
+}
+
+.menu {
+    font: bold 12px/18px sans-serif;
+    text-align: center;
+    display: inline;/* the whole block is going to be in line */
+    margin: 0;
+    padding: 0px;/*space between columns*/
+    list-style: none;/*style of the list*/
+}
+
+.menu li{
+    color:#B3B3B3;
+    display: inline-block;
+    margin-right: -2px;
+    position:relative;/*this dropped menu will be relative to the inline*/
+    padding: 12px 40px;
+    border: 1px solid #9D9FA2;
+    border-radius: 1.5px;
+    background-color: #387593;
+    cursor:pointer;
+}
+
+.menu li:hover{
+    background-color: #5EAFDF;
+    color:#fff;
+}
+
+.menu li:hover ul{
+    display: block;
+    opacity: 1;
+    /*While hovered, drop down-menu appears
+    This also avoids a block-level bug*/
+    visibility: visible;
+}
+
+.submenu{
+    padding: 0;
+    left: 0;
+    position: absolute;
+    top: 43.5px;
+    width: 125.5px;
+    opacity:0;/*you see it when 1 and dont see it when 0*/
+    /*While not being hovered, drop down menue hides 
+    This aspo avoids a block-level bug*/
+    visibility: hidden;
+}
+
+.submenu{
+    background-color: #387593;
+    display: block;
+    color: #B3B3B3;
+}
+
+.submenu li:hover{
+    color:#fff;
+    background-color: #5EAFDF;
+} 
