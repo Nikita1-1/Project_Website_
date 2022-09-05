@@ -95,7 +95,7 @@ body {
 /* Home section */
 
 #home {
-    background-image: url("../images/cup.jpg");
+    background-image: url("../images/cup.jpg");/* no-repeat 100% 100% is using only when it is large image*/
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -337,7 +337,7 @@ section{
     background-color: rgba(100, 65, 0, .3);
 }
 
-#contact {
+#Online_Order {
     background: #f5f3f3;
 }
 
